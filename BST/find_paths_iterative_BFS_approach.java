@@ -9,10 +9,10 @@ public static void findPathsBFS(Node root)
 		{
 			return;
 		}
-		Queue<Node> queue = new LinkedList<>();
-		Queue<ArrayList<Integer>> pathQueue = new LinkedList<>();
-		queue.add(root);
-		pathQueue.add(new ArrayList<>());
+		Queue<Node> queue = new LinkedList<>();								// Creating LinkedList-based-Queue, which stores Node data-type objects.
+		Queue<ArrayList<Integer>> pathQueue = new LinkedList<>();					// Now creating a new LinkedList-based-Queue of ArrayList data-type, which trak the path.
+		queue.add(root);										// Adding root to the Queue. it allows, the while() to be executed for the root node.
+		pathQueue.add(new ArrayList<>());								// Adding Empty LinkedList<>, root doesn't have any path, because the path is caulated from
 		
 		while(!queue.isEmpty())
 		{
