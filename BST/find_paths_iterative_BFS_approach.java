@@ -4,6 +4,9 @@
 			 "      will print that path which comes first in the level wise, whenever the leaf node come in the level, it will printed as the first path. 
 			 " -->  This property lets this code to print the paths in an 'ascending order', at first there will be the shortest path printed, and at last there 
 			 "      will be the longest path printed.
+			 " -->  This version(BFS) of code, doesn't consume as much as the DFS-iterative one, there in each iteration if node has two children we had to create
+			 "      two 'newPath' ArrayList<> in each iteration, but here we don't, we use the same 'pathQueue' throughout the code.I think this is because of the 
+			 "	property of using Queue.
                                   
 public static void findPathsBFS(Node root)
 	{
